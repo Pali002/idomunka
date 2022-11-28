@@ -1,7 +1,14 @@
+// <!-- 
+// * File: app.module.ts
+// * Author: Zentai Pál
+// * Group: Szoft-II-N
+// * Date: 2022-11-28
+// * Github: https://github.com/Pali002/
+// * Licenc: GNU GPL -->
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,8 +16,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
