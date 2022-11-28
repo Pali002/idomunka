@@ -7,8 +7,9 @@
 * Licenc: GNU GPL -->
 
 <div class="triangleForm bg-light">
-  <h1>Időmunka</h1>
+  <h1>Megmunkálási idő</h1>
   <p>Zentai Pál, 2022-11-28</p>
+  <p>Feladat 0357</p>
   <div class="mb-3">
     <label for="hosszusag" class="form-label">Hosszúság</label>
     <input type="text" id="hossz" class="form-control" [(ngModel)]="hosszusag">
@@ -17,12 +18,13 @@
     <label for="elotolas" class="form-label">Előtolás</label>
     <input type="text" id="elotolas" class="form-control" [(ngModel)]="elotolas">
   </div>
+  <button class="btn btn-warning" (click)="calcArea()">Számit</button>
   <div class="mb-3">
     <label for="fordulatszam" class="form-label">Fordulatszám</label>
     <input type="text" id="fordulatszam" class="form-control" [(ngModel)]="fordulatszam">
   </div>
 
-  <button class="btn btn-warning" (click)="calcArea()">Számit</button>
+
 
   <div class="mb-3" *ngIf="show">
     <label for="megmunkalasi_ido" class="form-label">Megmunkálási idő</label>
